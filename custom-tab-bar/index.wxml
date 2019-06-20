@@ -1,0 +1,24 @@
+<!--miniprogram/custom-tab-bar/index.wxml-->
+<cover-view class="tab-bar">
+  <cover-view class="tab-bar-border"></cover-view>
+  <cover-view  class="tab-bar-item" data-path="/index/index" data-index="0" bindtap="switchTab">
+    <cover-image src="{{selected === '0' ? list[0].selectedIconPath : list[0].iconPath}}"></cover-image>
+    <cover-view style="color: {{selected === '0' ? selectedColor : color}}">组件</cover-view>
+  </cover-view>
+  <cover-view  class="tab-bar-item" data-path="/index/index" data-index="1" bindtap="switchTab">
+    <cover-image src="{{selected === '1' ? list[0].selectedIconPath : list[0].iconPath}}"></cover-image>
+    <cover-view style="color: {{selected === '1' ? selectedColor : color}}">组件</cover-view>
+  </cover-view>
+  <cover-view class="tab-bar-item-scan" data-path="/index/index" data-index="2" bindtap="openScan">
+    <cover-image class="img-scan" src="{{selected === 2 ? selectedIconPath : iconPath}}"></cover-image>
+    <cover-view style="color: {{selected === '2' ? selectedColor : color}}"></cover-view>
+  </cover-view>
+  <cover-view class="tab-bar-item" data-path="/index/index" data-index="3" bindtap="switchTab">
+    <cover-image src="{{selected === '3' ? list[1].selectedIconPath : list[1].iconPath}}"></cover-image>
+    <cover-view style="color: {{selected === '3' ? selectedColor : color}}">api</cover-view>
+  </cover-view>
+  <cover-view class="tab-bar-item" data-path="/index/index" data-index="4" bindtap="switchTab">
+    <cover-image src="{{selected === '4' ? list[1].selectedIconPath : list[1].iconPath}}"></cover-image>
+    <cover-view style="color: {{selected === '4' ? selectedColor : color}}">api</cover-view>
+  </cover-view>
+</cover-view>
