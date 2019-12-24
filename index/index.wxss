@@ -1,4 +1,6 @@
 .intro {
-  margin: 30px;
+  /* margin: 30px; */
   text-align: center;
+  height: 100vh;
+  background-color: #f0f0f0;
 }
