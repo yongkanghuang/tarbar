@@ -1,1 +1,6 @@
-<view class="intro">组件</view>
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<!-- <custom-nav-bar navbar-data='{{nvabarData}}'></custom-nav-bar> -->
+<scroll-view scroll-y style="height: {{pageHeight}}px;margin-top: {{navHeight || 20}}px;">
+<view class="status-bar" style="height:0px"></view>
+ <view class="scroll-view-item">我是内容</view>
+</scroll-view>
